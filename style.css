@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+.container{
+    top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 40%;
+    height: 600px;
+    background: #b8a6a6;
+    border-radius: 50%;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.btn{
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.center{
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 20px 15px 50px rgba(0, 0, 0, 0.427);
+}
+.green{
+    border-top-left-radius: 100%;
+    background-color: green;
+}
+.red{
+    border-top-right-radius: 100%;
+    background-color: red;
+}
+.blue{
+    border-bottom-right-radius: 100%;
+    background-color: blue;
+}
+.yellow{
+    border-bottom-left-radius: 100%;
+    background-color: yellow;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+.flash{
+    background: rgb(255, 255, 255);
+}
+.userflash{
+    background: rgb(19, 18, 19);
+}
+.instruction{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    /* border: 2px solid red; */
+    padding: 5%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,20);
+
+}
+.instruction h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.instruction p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.instruction button{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.instruction button:hover{
+    background: #fff;
+    color: #000;
+}
+.instruction ul li{
+    list-style: number;
+    text-align: left;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+#win{
+    display: none;
+}
